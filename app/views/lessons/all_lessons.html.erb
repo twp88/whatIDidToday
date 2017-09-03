@@ -1,0 +1,9 @@
+<% if @lessons.any? %>
+  <% @lessons.each do |l|%>
+    <h2><%= l.title %></h2>
+    <p><%= l.lesson %></p>
+    <p><%= link_to l.title, lesson_path(l.id) %></p>
+  <% end %>
+<% else%>
+  <p><%="There are no lessons"%></p>
+<% end %>

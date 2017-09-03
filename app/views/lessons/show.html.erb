@@ -1,0 +1,5 @@
+<h1><%="Here are is the lesson #{@lesson.title}"%></h1>
+<p><%= @lesson.lesson %></p>
+<%= link_to 'Delete this lesson', lesson_path(@lesson), method: :delete%>
+<%= link_to 'Edit this lesson', edit_lesson_path(@lesson) %>
+<a href= '/'> Back to the begining </a>

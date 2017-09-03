@@ -1,0 +1,9 @@
+<h1><%= "This is where lessons get made" %> </h1>
+
+<%= form_for @lesson do |l|  %>
+  <%= l.label :title %>
+  <%= l.text_field :title %>
+  <%= l.label :lesson %>
+  <%= l.text_field :lesson %>
+  <%= l.submit %> 
+<% end %>
