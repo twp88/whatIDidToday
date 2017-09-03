@@ -21,7 +21,8 @@ class LessonsController < ApplicationController
   end
 
   def update
-    @lesson = Lesson.update(lesson_params)
+    @lesson = Lesson.find(params[:id])
+    @lesson.update(lesson_params)
     redirect_to lesson_path(params[:id])
   end
 
